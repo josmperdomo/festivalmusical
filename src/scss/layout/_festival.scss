@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixin' as m;
+
+
+.sobre-festival {
+  padding-right: 1.2rem;
+  @include m.contenedor;
+
+  @include m.desktop {
+    @include m.grid(2);
+  }
+  
+}
+
+
+
+.contenido-festival {
+  margin-top: 5rem;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .fecha {
+   color: v.$verde; 
+   font-weight: 700;
+  }
+
+}

@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+
+.footer {
+    background-color: v.$rosa;
+    padding: 2rem 0;
+    text-align: center;
+
+    p{
+      margin: 0;
+      color: v.$blanco;
+      font-weight: bold;
+    }
+
+    .degradado {
+      color: v.$blanco;
+      text-shadow: .2rem .3rem .4rem #333;
+      &:hover {
+        color: aquamarine;
+      }
+    }
+
+    .inicial {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+}
